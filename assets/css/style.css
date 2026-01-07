@@ -1,0 +1,111 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Fond */
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Calculatrice */
+.calculatrice {
+    background: #ffffff;
+    width: 320px;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+}
+
+/* Affichage */
+.affichage {
+    display: block;
+    height: 70px;
+    background: #f4f4f4;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 2rem;
+    text-align: right;
+    color: #333;
+    overflow: hidden;
+}
+
+/* Boutons */
+.bouton ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    list-style: none;
+    margin-bottom: 12px;
+}
+
+/* Bouton individuel */
+.bouton li {
+    background: #eaeaea;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+    user-select: none;
+}
+
+/* Hover */
+.bouton li:hover {
+    background: #d6e9ff;
+}
+
+/* Opérateurs */
+.bouton li:nth-child(4) {
+    background: #4facfe;
+    color: white;
+}
+
+.bouton li:nth-child(4):hover {
+    background: #00c6fb;
+}
+
+/* Boutons spéciaux */
+.clear {
+    background: #ff6b6b;
+    color: white;
+}
+
+.clear:hover {
+    background: #ff4d4d;
+}
+
+.validate {
+    background: #2ecc71;
+    color: white;
+}
+
+.validate:hover {
+    background: #27ae60;
+}
+
+@media (max-width: 400px) {
+    .calculatrice {
+        width: 90%;
+    }
+
+    .affichage {
+        font-size: 1.6rem;
+    }
+
+    .bouton li {
+        padding: 12px;
+        font-size: 1rem;
+    }
+}
+
