@@ -78,7 +78,7 @@ body {
 /* Boutons spéciaux */
 .clear {
     background: #ff6b6b;
-    color: white;
+    color: black;
 }
 
 .clear:hover {
@@ -87,7 +87,7 @@ body {
 
 .validate {
     background: #2ecc71;
-    color: white;
+    color: black;
 }
 
 .validate:hover {
